@@ -1,498 +1,460 @@
-* {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+*{
+    color:white;
+    margin: 0rem;
+    padding: 0rem;
+    font-family:  "Inter", sans-serif;
 }
 
-:root {
-    --heading-font: "Orbitron", sans-serif;
+:root{
+    --font-family1: "Orbitron", sans-serif;
 }
-
-a {
+a{
     text-decoration: none;
-    transition: color 0.3s ease;
 }
-
-a:hover {
-    color: #ff0;
+a:hover{
+    color: yellow;
     cursor: pointer;
 }
-
-/* Background Styling */
-.page::before {
-    content: "";
-    background: url("h3.png") no-repeat center center/cover;
+/* background */
+.page::before{
+    content: " ";
+    background: url("hero3.png") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 63rem;
-    z-index: -1;
+    z-index: -100;
+}
+#pg1::before{
+    background: url("Hero.png") no-repeat center center/cover;
 }
 
-#pg1::before {
-    background: url("H.png") no-repeat center center/cover;
-}
-
-/* Header Styling */
-#logo {
+/* header */
+#logo{
     display: flex;
     align-items: center;
     font-size: 2.5rem;
 }
-
-#logo img {
+#logo img{
     width: 4rem;
 }
-
-#logo div {
-    font-family: var(--heading-font);
+#logo div{
+    font-family: var(--font-family1);
 }
 
-header {
+header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     position: fixed;
-    top: 0;
+    top: 0rem;
     width: 100%;
-    padding: 1rem 2rem;
-    z-index: 10;
+    z-index: 100;
 }
 
-#nav {
+#nav{
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
 }
-
-#nav div {
+#nav div{
     margin: 1rem;
 }
 
-/* Section Styling */
-#sect {
-    width: 60rem;
-    height: 36rem;
+/* text */
+#sect{
+    width: 62rem;
+    height: 37rem;
     position: absolute;
-    top: 9rem;
-    left: 20%;
+    top: 9rem ;
+    left: 21%;
     text-align: center;
+    justify-content: center;
 }
-
-h1 {
-    font-family: var(--heading-font);
+h1{
+    font-family: var(--font-family1);
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 6rem;
+}
+p{
+    margin: 3rem 0rem;
 }
 
-p {
-    margin: 2rem 0;
-}
-
-button {
+button{
     background: none;
     border: none;
-    position: absolute;
-    top: 40rem;
+    top:40rem ;
 }
-
-button img {
+button img{
     width: 13rem;
-    transition: width 0.3s ease;
 }
-
-button img:hover {
+button img:hover{
     cursor: pointer;
-    width: 14rem;
+    width: 13.8rem;
 }
+/* planets positioning */
 
-/* Planet Positioning */
-.planet {
+.planet{
     position: absolute;
     z-index: -50;
 }
-
-#p1 {
+#p1{
     width: 16rem;
-    right: 0;
+    right: 0rem;
     top: 5rem;
 }
 
-#p2 {
-    width: 12rem;
-    left: 0;
+#p2{
+    width: 12.5rem;
+    left: 0rem;
     top: 5rem;
 }
 
-#p3 {
+#p3{
     width: 8rem;
     top: 6rem;
     right: 36rem;
 }
 
-#p4 {
+#p4{
     width: 20rem;
     top: 20rem;
 }
 
-#p5 {
+#p5{
     width: 9rem;
-    top: 54rem;
+    top:54rem;
 }
 
-#p6 {
+#p6{
     width: 14rem;
-    top: 54rem;
+    top: 53.6rem;
     left: 40rem;
 }
 
-#p7 {
+#p7{
     width: 5rem;
     top: 27rem;
     left: 17rem;
 }
 
-#p8 {
+#p8{
     width: 25rem;
-    top: 41rem;
-    right: 0;
+    top:41rem;
+    right: 0rem;
 }
 
-/* Page 2 Styling */
-#pg2::before {
-    background: url("h2.png") no-repeat center center/cover;
-    top: 63rem;
+/* page 2 */
+#pg2::before{
+    background: url("hero2.png") no-repeat center center/cover;
+    top:63rem ;
     height: 70rem;
 }
 
-#sun {
+#sun{
     top: 63rem;
     width: 100%;
 }
 
-.text {
+.text{
     width: 50%;
     position: absolute;
     top: 90rem;
     left: 4rem;
 }
 
-.card {
+.card{
     width: 22rem;
     position: absolute;
 }
-
-#card2 {
+#card2{
     left: 25rem;
 }
 
-/* Page 3 Styling */
-#pg3::before {
+/* page 3 */
+
+#pg3::before{
     top: 133rem;
 }
 
-#mercury {
-    width: 32rem;
+#mercury{
+    width: auto;
     top: 142rem;
 }
 
-#mer_text {
+#mer_text{
     left: 45%;
     top: 142rem;
 }
 
-#card4 {
+#mercury{
+    width: 32.6rem;
+}
+#card4{
     left: 25rem;
 }
-
-#card5 {
+#card5{
     top: 30rem;
 }
 
-/* Page 4 Styling */
-#pg4::before {
+/* page 4 */
+
+#pg4::before{
     top: 196rem;
 }
 
-#venus {
-    top: 209rem;
-    right: 0;
+#venus{
+    top: 209.3rem;
+    right: 0rem;
     width: 52rem;
 }
 
-#ven_text {
+#ven_text{
     top: 205rem;
 }
 
-#ven_cards img {
+#ven_cards img{
     display: block;
     margin: 2rem;
 }
-
-#c7 {
+#c7{
     top: 30rem;
 }
 
-/* Page 5 Styling */
-#pg5::before {
+/* page 5 */
+#pg5::before{
     top: 259rem;
 }
 
-#earth {
-    top: 288rem;
+#earth{
+    top: 288.4rem;
     left: 9%;
-    width: 78rem;
+    width:79rem ;
 }
 
-#eshadow1 {
-    top: 294rem;
+#eshadow1{
+    top: 294.4rem;
     left: 5%;
-    width: 86rem;
+    width:86rem ;
 }
 
-#rocket {
-    top: 290rem;
+#rocket{
+    top: 290rem ;
     width: 11rem;
 }
 
-#c8 {
+#c8{
     top: 265rem;
     right: 8rem;
 }
 
-#arrow1 {
-    top: 0;
+#arrow{
+    top: 0rem;
     left: 44rem;
-    width: 12rem;
+    width: 12em;
 }
 
-#moon_text {
+#moon_text{
     top: 284rem;
     left: 16rem;
     text-align: center;
     width: 43rem;
 }
-
-.subtext {
+.subtext{
     position: absolute;
 }
-
-.subtext p {
-    margin: 0.5rem;
+.subtext p{
+    margin: 0.5rem;padding: 0rem;
 }
-
-h2 {
+h2{
     font-size: 4rem;
     text-align: right;
 }
-
-#earth_text {
+#earth_text{
     top: 265rem;
 }
 
-/* Page 6 Styling */
-#pg6::before {
+/* page 6 */
+#pg6::before{
     top: 322rem;
 }
-
-#mars {
-    top: 355rem;
+#mars{
+    top: 355.5rem;
     width: 35rem;
 }
-
-#marsText {
+#marsText{
+    /* position: absolute; */
     top: 330rem;
 }
-
-#martianMoon {
+#martianMoon{
     top: 365rem;
     left: 36rem;
     width: 25rem;
     text-align: center;
 }
-
-#martianMoon h2 {
+#martianMoon h2{
     font-size: 2.5rem;
 }
-
-#arrow2 {
+#arrow2{
     width: 10rem;
     bottom: 7rem;
     right: 19rem;
 }
-
-#c9 {
-    top: 0;
+#c9{
+    top: 0rem;
     left: 60rem;
 }
-
-#c10 {
+#c10{
     top: 15rem;
     left: 60rem;
 }
-
-#c11 {
+#c11{
     top: 30rem;
     left: 60rem;
 }
 
-/* Page 7 Styling */
-#pg7::before {
+/* page 7 */
+#pg7::before{
     top: 385rem;
 }
-
-#jupiter, #jshadow {
+#jshadow,#jupiter{
     top: 385rem;
-    right: 0;
+    right: 0rem;
     width: 45rem;
 }
-
-#jupiter {
+#jupiter{
     width: 58rem;
 }
-
-#jupiter_text {
+#jupiter_text{
     top: 395rem;
     width: 40rem;
 }
-
-#jupiter_cards {
+#jupiter_cards{
     top: 400rem;
 }
-
-#c13 {
+#c13{
     top: 30rem;
 }
 
-/* Page 8 Styling */
-#pg8::before {
+/* page 8 */
+#pg8::before{
     top: 448rem;
 }
-
-#saturn {
+#saturn{
     top: 453rem;
     width: 56rem;
 }
-
-#Saturn_text {
+#Saturn_text{
     position: absolute;
     top: 453rem;
     left: 45rem;
     text-align: right;
 }
-
-#c14, #c15 {
+#c14,#c15{
     right: 10rem;
     top: 20rem;
 }
-
-#c15 {
+#c15{
     top: 35rem;
 }
 
-/* Page 9 Styling */
-#pg9::before {
+/* page 9 */
+#pg9::before{
     top: 511rem;
 }
-
-#uranus {
-    top: 543rem;
-    right: 0;
+#uranus{
+    top: 543.2rem;
+    right: 0rem;
     width: 85rem;
 }
-
-#uranus_text {
+#uranus_text{
     top: 520rem;
     width: 30rem;
 }
-
-#c16, #c17 {
+#c16,#c17{
     top: 1rem;
     left: 35rem;
 }
-
-#c17 {
+#c17{
     left: 60rem;
 }
 
-/* Page 10 Styling */
-#pg10::before {
+/* page 10 */
+#pg10::before{
     top: 574rem;
 }
-
-#neptune {
+#neptune{
     top: 573rem;
     width: 90rem;
 }
-
-#neptune_text {
+#neptune_text{
     top: 576rem;
     text-align: center;
     left: 25rem;
 }
-
-#c18 {
-    left: 0;
+#c18{
+    left: 0rem ;
 }
 
-/* Page 11 Styling */
-#pg11::before {
+/* page 11 */
+#pg11::before{
     top: 637rem;
     height: 36.5rem;
 }
-
-#last {
+#last{
     top: 637rem;
     width: 90rem;
 }
 
-#black {
-    background: #222;
+#black{
+    background: rgb(34, 33, 33);
     top: 640rem;
     border-radius: 2rem;
     width: 53rem;
     height: 23rem;
-    padding: 4rem 8rem;
+    /* margin: 3rem; */
+    padding:4rem 8rem;
     text-align: center;
     left: 15rem;
 }
-
-#black h2 {
+#black h2{
     text-align: center;
     font-size: 3rem;
-    font-family: var(--heading-font);
+    font-family: var(--font-family1);
 }
-
-#email {
+#email{
     padding: 1rem;
     width: 40rem;
     font-size: 1.5rem;
     height: 4rem;
-    border-radius: 2rem;
-    color: #000;
+    border-radius: 4rem;
+    color: black;
 }
-
-#subscribe {
+#subscribe{
     position: absolute;
     top: 16.8rem;
     right: 14rem;
 }
 
-/* Footer Styling */
-footer {
+/* footer  */
+footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     left: 3rem;
     width: 63rem;
-    margin: 3rem 0;
+    margin: 3rem 0rem;
 }
 
-#flogo {
+#flogo{
     display: flex;
     align-items: center;
 }
-
-#
+#flogo img{
+    width: 2rem;
+}
+#flogo div{
+    font-family: var(--font-family1);
+}
