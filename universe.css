@@ -1,23 +1,27 @@
-*{
-    color:white;
-    margin: 0rem;
-    padding: 0rem;
-    font-family:  "Inter", sans-serif;
+/* General styles */
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
-:root{
-    --font-family1: "Orbitron", sans-serif;
+:root {
+    --custom-font: "Orbitron", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: yellow;
     cursor: pointer;
 }
-/* background */
-.page::before{
-    content: " ";
+
+/* Background settings */
+.page::before {
+    content: "";
     background: url("hero3.png") no-repeat center center/cover;
     position: absolute;
     top: 0;
@@ -26,404 +30,447 @@ a:hover{
     height: 63rem;
     z-index: -100;
 }
-#pg1::before{
+
+#pg1::before {
     background: url("Hero.png") no-repeat center center/cover;
 }
 
-/* header */
-#logo{
+/* Header styles */
+#logo {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
 }
-#logo img{
+
+#logo img {
     width: 4rem;
 }
-#logo div{
-    font-family: var(--font-family1);
+
+#logo div {
+    font-family: var(--custom-font);
 }
 
-header{
+header {
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-around;
     position: fixed;
-    top: 0rem;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
 
-#nav{
+#nav {
     display: flex;
     justify-content: space-between;
 }
-#nav div{
+
+#nav div {
     margin: 1rem;
 }
 
-/* text */
-#sect{
+/* Section text styles */
+#sect {
     width: 62rem;
     height: 37rem;
     position: absolute;
-    top: 9rem ;
+    top: 9rem;
     left: 21%;
     text-align: center;
     justify-content: center;
 }
-h1{
-    font-family: var(--font-family1);
+
+h1 {
+    font-family: var(--custom-font);
     font-weight: bold;
     font-size: 6rem;
 }
-p{
-    margin: 3rem 0rem;
+
+p {
+    margin: 3rem 0;
 }
 
-button{
+button {
     background: none;
     border: none;
-    top:40rem ;
+    top: 40rem;
 }
-button img{
+
+button img {
     width: 13rem;
 }
-button img:hover{
+
+button img:hover {
     cursor: pointer;
     width: 13.8rem;
 }
-/* planets positioning */
 
-.planet{
+/* Planets positioning */
+.planet {
     position: absolute;
     z-index: -50;
 }
-#p1{
+
+#p1 {
     width: 16rem;
-    right: 0rem;
+    right: 0;
     top: 5rem;
 }
 
-#p2{
+#p2 {
     width: 12.5rem;
-    left: 0rem;
+    left: 0;
     top: 5rem;
 }
 
-#p3{
+#p3 {
     width: 8rem;
     top: 6rem;
     right: 36rem;
 }
 
-#p4{
+#p4 {
     width: 20rem;
     top: 20rem;
 }
 
-#p5{
+#p5 {
     width: 9rem;
-    top:54rem;
+    top: 54rem;
 }
 
-#p6{
+#p6 {
     width: 14rem;
     top: 53.6rem;
     left: 40rem;
 }
 
-#p7{
+#p7 {
     width: 5rem;
     top: 27rem;
     left: 17rem;
 }
 
-#p8{
+#p8 {
     width: 25rem;
-    top:41rem;
-    right: 0rem;
+    top: 41rem;
+    right: 0;
 }
 
-/* page 2 */
-#pg2::before{
+/* Page 2 */
+#pg2::before {
     background: url("hero2.png") no-repeat center center/cover;
-    top:63rem ;
+    top: 63rem;
     height: 70rem;
 }
 
-#sun{
+#sun {
     top: 63rem;
     width: 100%;
 }
 
-.text{
+.text {
     width: 50%;
     position: absolute;
     top: 90rem;
     left: 4rem;
 }
 
-.card{
+.card {
     width: 22rem;
     position: absolute;
 }
-#card2{
+
+#card2 {
     left: 25rem;
 }
 
-/* page 3 */
-
-#pg3::before{
+/* Page 3 */
+#pg3::before {
     top: 133rem;
 }
 
-#mercury{
+#mercury {
     width: auto;
     top: 142rem;
 }
 
-#mer_text{
+#mer_text {
     left: 45%;
     top: 142rem;
 }
 
-#mercury{
+#mercury {
     width: 32.6rem;
 }
-#card4{
+
+#card4 {
     left: 25rem;
 }
-#card5{
+
+#card5 {
     top: 30rem;
 }
 
-/* page 4 */
-
-#pg4::before{
+/* Page 4 */
+#pg4::before {
     top: 196rem;
 }
 
-#venus{
+#venus {
     top: 209.3rem;
-    right: 0rem;
+    right: 0;
     width: 52rem;
 }
 
-#ven_text{
+#ven_text {
     top: 205rem;
 }
 
-#ven_cards img{
+#ven_cards img {
     display: block;
     margin: 2rem;
 }
-#c7{
+
+#c7 {
     top: 30rem;
 }
 
-/* page 5 */
-#pg5::before{
+/* Page 5 */
+#pg5::before {
     top: 259rem;
 }
 
-#earth{
+#earth {
     top: 288.4rem;
     left: 9%;
-    width:79rem ;
+    width: 79rem;
 }
 
-#eshadow1{
+#eshadow1 {
     top: 294.4rem;
     left: 5%;
-    width:86rem ;
+    width: 86rem;
 }
 
-#rocket{
-    top: 290rem ;
+#rocket {
+    top: 290rem;
     width: 11rem;
 }
 
-#c8{
+#c8 {
     top: 265rem;
     right: 8rem;
 }
 
-#arrow{
-    top: 0rem;
+#arrow {
+    top: 0;
     left: 44rem;
     width: 12em;
 }
 
-#moon_text{
+#moon_text {
     top: 284rem;
     left: 16rem;
     text-align: center;
     width: 43rem;
 }
-.subtext{
+
+.subtext {
     position: absolute;
 }
-.subtext p{
-    margin: 0.5rem;padding: 0rem;
+
+.subtext p {
+    margin: 0.5rem;
+    padding: 0;
 }
-h2{
+
+h2 {
     font-size: 4rem;
     text-align: right;
 }
-#earth_text{
+
+#earth_text {
     top: 265rem;
 }
 
-/* page 6 */
-#pg6::before{
+/* Page 6 */
+#pg6::before {
     top: 322rem;
 }
-#mars{
+
+#mars {
     top: 355.5rem;
     width: 35rem;
 }
-#marsText{
-    /* position: absolute; */
+
+#marsText {
     top: 330rem;
 }
-#martianMoon{
+
+#martianMoon {
     top: 365rem;
     left: 36rem;
     width: 25rem;
     text-align: center;
 }
-#martianMoon h2{
+
+#martianMoon h2 {
     font-size: 2.5rem;
 }
-#arrow2{
+
+#arrow2 {
     width: 10rem;
     bottom: 7rem;
     right: 19rem;
 }
-#c9{
-    top: 0rem;
+
+#c9 {
+    top: 0;
     left: 60rem;
 }
-#c10{
+
+#c10 {
     top: 15rem;
     left: 60rem;
 }
-#c11{
+
+#c11 {
     top: 30rem;
     left: 60rem;
 }
 
-/* page 7 */
-#pg7::before{
+/* Page 7 */
+#pg7::before {
     top: 385rem;
 }
-#jshadow,#jupiter{
+
+#jshadow,
+#jupiter {
     top: 385rem;
-    right: 0rem;
+    right: 0;
     width: 45rem;
 }
-#jupiter{
+
+#jupiter {
     width: 58rem;
 }
-#jupiter_text{
+
+#jupiter_text {
     top: 395rem;
     width: 40rem;
 }
-#jupiter_cards{
+
+#jupiter_cards {
     top: 400rem;
 }
-#c13{
+
+#c13 {
     top: 30rem;
 }
 
-/* page 8 */
-#pg8::before{
+/* Page 8 */
+#pg8::before {
     top: 448rem;
 }
-#saturn{
+
+#saturn {
     top: 453rem;
     width: 56rem;
 }
-#Saturn_text{
+
+#Saturn_text {
     position: absolute;
     top: 453rem;
     left: 45rem;
     text-align: right;
 }
-#c14,#c15{
+
+#c14,
+#c15 {
     right: 10rem;
     top: 20rem;
 }
-#c15{
+
+#c15 {
     top: 35rem;
 }
 
-/* page 9 */
-#pg9::before{
+/* Page 9 */
+#pg9::before {
     top: 511rem;
 }
-#uranus{
+
+#uranus {
     top: 543.2rem;
-    right: 0rem;
+    right: 0;
     width: 85rem;
 }
-#uranus_text{
+
+#uranus_text {
     top: 520rem;
     width: 30rem;
 }
-#c16,#c17{
+
+#c16,
+#c17 {
     top: 1rem;
     left: 35rem;
 }
-#c17{
+
+#c17 {
     left: 60rem;
 }
 
-/* page 10 */
-#pg10::before{
+/* Page 10 */
+#pg10::before {
     top: 574rem;
 }
-#neptune{
+
+#neptune {
     top: 573rem;
     width: 90rem;
 }
-#neptune_text{
+
+#neptune_text {
     top: 576rem;
     text-align: center;
     left: 25rem;
 }
-#c18{
-    left: 0rem ;
+
+#c18 {
+    left: 0;
 }
 
-/* page 11 */
-#pg11::before{
+/* Page 11 */
+#pg11::before {
     top: 637rem;
     height: 36.5rem;
 }
-#last{
+
+#last {
     top: 637rem;
     width: 90rem;
 }
 
-#black{
+#black {
     background: rgb(34, 33, 33);
     top: 640rem;
     border-radius: 2rem;
     width: 53rem;
     height: 23rem;
-    /* margin: 3rem; */
-    padding:4rem 8rem;
+    padding: 4rem 8rem;
     text-align: center;
     left: 15rem;
 }
-#black h2{
+
+#black h2 {
     text-align: center;
     font-size: 3rem;
-    font-family: var(--font-family1);
+    font-family: var(--custom-font);
 }
-#email{
+
+#email {
     padding: 1rem;
     width: 40rem;
     font-size: 1.5rem;
@@ -431,30 +478,33 @@ h2{
     border-radius: 4rem;
     color: black;
 }
-#subscribe{
+
+#subscribe {
     position: absolute;
     top: 16.8rem;
     right: 14rem;
 }
 
-/* footer  */
-footer{
+/* Footer */
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     left: 3rem;
     width: 63rem;
-    margin: 3rem 0rem;
+    margin: 3rem 0;
 }
 
-#flogo{
+#flogo {
     display: flex;
     align-items: center;
 }
-#flogo img{
+
+#flogo img {
     width: 2rem;
 }
-#flogo div{
-    font-family: var(--font-family1);
+
+#flogo div {
+    font-family: var(--custom-font);
 }
