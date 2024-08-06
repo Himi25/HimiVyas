@@ -1,4 +1,4 @@
-/* General styles */
+
 * {
     color: white;
     margin: 0;
@@ -19,7 +19,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* Background settings */
+
 .page::before {
     content: "";
     background: url("hero3.png") no-repeat center center/cover;
@@ -35,7 +35,7 @@ a:hover {
     background: url("Hero.png") no-repeat center center/cover;
 }
 
-/* Header styles */
+
 #logo {
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@ header {
     margin: 1rem;
 }
 
-/* Section text styles */
+
 #sect {
     width: 62rem;
     height: 37rem;
@@ -105,7 +105,7 @@ button img:hover {
     width: 13.8rem;
 }
 
-/* Planets positioning */
+
 .planet {
     position: absolute;
     z-index: -50;
@@ -157,7 +157,7 @@ button img:hover {
     right: 0;
 }
 
-/* Page 2 */
+
 #pg2::before {
     background: url("hero2.png") no-repeat center center/cover;
     top: 63rem;
@@ -185,7 +185,7 @@ button img:hover {
     left: 25rem;
 }
 
-/* Page 3 */
+
 #pg3::before {
     top: 133rem;
 }
@@ -212,7 +212,7 @@ button img:hover {
     top: 30rem;
 }
 
-/* Page 4 */
+
 #pg4::before {
     top: 196rem;
 }
@@ -294,7 +294,7 @@ h2 {
     top: 265rem;
 }
 
-/* Page 6 */
+
 #pg6::before {
     top: 322rem;
 }
@@ -340,7 +340,7 @@ h2 {
     left: 60rem;
 }
 
-/* Page 7 */
+
 #pg7::before {
     top: 385rem;
 }
@@ -396,7 +396,7 @@ h2 {
     top: 35rem;
 }
 
-/* Page 9 */
+
 #pg9::before {
     top: 511rem;
 }
@@ -422,7 +422,7 @@ h2 {
     left: 60rem;
 }
 
-/* Page 10 */
+
 #pg10::before {
     top: 574rem;
 }
@@ -442,7 +442,7 @@ h2 {
     left: 0;
 }
 
-/* Page 11 */
+
 #pg11::before {
     top: 637rem;
     height: 36.5rem;
@@ -485,7 +485,7 @@ h2 {
     right: 14rem;
 }
 
-/* Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
